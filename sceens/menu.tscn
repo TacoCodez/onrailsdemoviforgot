@@ -1,0 +1,226 @@
+[gd_scene load_steps=17 format=3 uid="uid://dsc6id1pfxmu"]
+
+[ext_resource type="Texture2D" uid="uid://dtt2o7kf66fya" path="res://assets/menu/Screenshot 2025-07-20 182016.png" id="1_lti8b"]
+[ext_resource type="Script" uid="uid://dcqaben6v3leh" path="res://scripts/loadin.gd" id="1_ytr4m"]
+[ext_resource type="FontFile" uid="uid://cxvstqboict34" path="res://assets/menu/LEMONMILK-Regular.otf" id="2_ouk20"]
+[ext_resource type="Texture2D" uid="uid://v2jypw1ci4yf" path="res://assets/menu/Godot.png" id="4_l48gv"]
+[ext_resource type="Texture2D" uid="uid://b7uei8nihpvri" path="res://Avoid Trains (2).png" id="4_qfyuk"]
+[ext_resource type="Texture2D" uid="uid://dnf6jfu3g0p3i" path="res://assets/menu/Blender_logo.png" id="5_ecwwl"]
+[ext_resource type="Texture2D" uid="uid://dehsxxky817di" path="res://assets/menu/2025_07_20_0wf_Kleki.png" id="6_ecwwl"]
+[ext_resource type="Texture2D" uid="uid://cgpj60ubx8li3" path="res://assets/menu/2025_07_20_0we_Kleki.png" id="6_l48gv"]
+[ext_resource type="AudioStream" uid="uid://m6rvsgb3b2ey" path="res://assets/sounds/MenuIntro.mp3" id="8_gjct7"]
+[ext_resource type="AudioStream" uid="uid://df5h2qcirjfms" path="res://assets/sounds/MenuMusic.mp3" id="8_j3grn"]
+[ext_resource type="Script" uid="uid://b5ka3qj80illq" path="res://sceens/Menu music.gd" id="10_qfyuk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ecwwl"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ecwwl"]
+texture = ExtResource("6_ecwwl")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nrnbx"]
+texture = ExtResource("6_l48gv")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kk3ma"]
+texture = ExtResource("6_l48gv")
+
+[sub_resource type="SystemFont" id="SystemFont_26b0u"]
+
+[node name="Menu" type="Node2D"]
+script = ExtResource("1_ytr4m")
+
+[node name="Screenshot2025-07-20182016" type="Sprite2D" parent="."]
+position = Vector2(478, 259)
+scale = Vector2(1.04118, 1.04118)
+texture = ExtResource("1_lti8b")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 84.0
+offset_top = 76.0
+offset_right = 863.0
+offset_bottom = 349.0
+theme_override_fonts/font = ExtResource("2_ouk20")
+theme_override_font_sizes/font_size = 160
+metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Label"]
+position = Vector2(396, 163)
+scale = Vector2(0.26036, 0.26036)
+texture = ExtResource("4_qfyuk")
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 227.0
+offset_top = 39.0
+offset_right = 1006.0
+offset_bottom = 312.0
+theme_override_fonts/font = ExtResource("2_ouk20")
+theme_override_font_sizes/font_size = 80
+text = "Made With:"
+metadata/_edit_use_anchors_ = true
+
+[node name="Godot" type="Sprite2D" parent="."]
+position = Vector2(251.04, 280.698)
+scale = Vector2(0.22664, 0.22664)
+texture = ExtResource("4_l48gv")
+
+[node name="BlenderLogo" type="Sprite2D" parent="."]
+position = Vector2(669.04, 263.698)
+scale = Vector2(0.129909, 0.129909)
+texture = ExtResource("5_ecwwl")
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 23.0
+offset_top = 481.0
+offset_right = 946.0
+offset_bottom = 754.0
+theme_override_colors/font_color = Color(0.798974, 4.3799e-06, 6.73831e-07, 1)
+theme_override_fonts/font = ExtResource("2_ouk20")
+theme_override_font_sizes/font_size = 30
+text = "Demo Made Originaly For Inbound Shovel Game Jam"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label4" type="Label" parent="."]
+offset_right = 1677.0
+offset_bottom = 798.0
+scale = Vector2(0.572456, 0.572456)
+theme_override_fonts/font = ExtResource("2_ouk20")
+theme_override_font_sizes/font_size = 64
+text = "On Rails Was Originally An Idea For A Game 
+Inspired By Lsplash's Doors.
+
+This Is A Demo. Features In The Full Game
+Are Subject To Change Or Removal
+
+For More Updates And Some Devlogs
+On The Full Game Follow Fiftythirdrail
+On itch.io"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label5" type="Label" parent="."]
+offset_right = 923.0
+offset_bottom = 273.0
+scale = Vector2(1.04009, 1.04009)
+theme_override_fonts/font = ExtResource("2_ouk20")
+theme_override_font_sizes/font_size = 45
+text = "
+W, A, S, D To Move"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label6" type="Label" parent="."]
+offset_right = 930.0
+offset_bottom = 273.0
+scale = Vector2(1.03227, 1.03227)
+theme_override_fonts/font = ExtResource("2_ouk20")
+theme_override_font_sizes/font_size = 45
+text = "
+
+
+Head Left At The First Station, 
+Stations Should Be On The Left"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label7" type="Label" parent="."]
+offset_right = 923.0
+offset_bottom = 273.0
+scale = Vector2(1.04006, 1.04006)
+theme_override_fonts/font = ExtResource("2_ouk20")
+theme_override_font_sizes/font_size = 45
+text = "
+
+
+
+
+
+Watch out for trains"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="."]
+offset_left = 115.0
+offset_top = 375.0
+offset_right = 433.0
+offset_bottom = 546.0
+scale = Vector2(0.7, 0.624)
+theme_override_fonts/font = ExtResource("2_ouk20")
+theme_override_font_sizes/font_size = 128
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ecwwl")
+theme_override_styles/hover = SubResource("StyleBoxTexture_ecwwl")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_nrnbx")
+theme_override_styles/normal = SubResource("StyleBoxTexture_kk3ma")
+text = "Play
+"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 418.0
+offset_top = 379.0
+offset_right = 959.0
+offset_bottom = 550.0
+scale = Vector2(0.7, 0.624)
+theme_override_fonts/font = ExtResource("2_ouk20")
+theme_override_font_sizes/font_size = 128
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ecwwl")
+theme_override_styles/hover = SubResource("StyleBoxTexture_ecwwl")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_nrnbx")
+theme_override_styles/normal = SubResource("StyleBoxTexture_kk3ma")
+text = "Credits"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label8" type="Label" parent="."]
+offset_right = 923.0
+offset_bottom = 273.0
+scale = Vector2(1.04008, 1.04008)
+theme_override_fonts/font = SubResource("SystemFont_26b0u")
+theme_override_font_sizes/font_size = 45
+text = "
+FIFTYTHIRDRAIL
+      V2.0 SCRIPTS AND ALL ASSETS
+NONOOBSHERE
+      V1.0-V2.0 (BASE) SCRIPTS
+ANNONYMUS
+      MUSIC"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label9" type="Label" parent="."]
+offset_left = 6.0
+offset_top = 177.0
+offset_right = 954.0
+offset_bottom = 450.0
+theme_override_fonts/font = ExtResource("2_ouk20")
+theme_override_font_sizes/font_size = 50
+metadata/_edit_use_anchors_ = true
+
+[node name="Label10" type="Label" parent="."]
+offset_left = 198.0
+offset_top = 290.0
+offset_right = 1121.0
+offset_bottom = 563.0
+theme_override_fonts/font = ExtResource("2_ouk20")
+theme_override_font_sizes/font_size = 50
+metadata/_edit_use_anchors_ = true
+
+[node name="Label11" type="Label" parent="."]
+offset_left = 708.0
+offset_top = 2.0
+offset_right = 1487.0
+offset_bottom = 275.0
+rotation = 0.12351
+theme_override_fonts/font = ExtResource("2_ouk20")
+theme_override_font_sizes/font_size = 80
+metadata/_edit_use_anchors_ = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_gjct7")
+volume_db = 10.0
+autoplay = true
+
+[node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_j3grn")
+volume_db = 10.0
+script = ExtResource("10_qfyuk")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

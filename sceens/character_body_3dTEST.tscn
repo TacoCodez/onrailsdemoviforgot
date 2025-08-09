@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://dj7najj8eosf"]
+
+[ext_resource type="Script" uid="uid://cbw77hj7owk8v" path="res://scripts/character_body_3d_test.gd" id="1_pll1d"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_gkfys"]
+
+[node name="CharacterBody3D" type="CharacterBody3D"]
+script = ExtResource("1_pll1d")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_gkfys")
+
+[node name="Camera3" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.706761, 0)
+
+[node name="You dead lol" type="ColorRect" parent="Camera3"]
+offset_left = -315.0
+offset_top = -152.0
+offset_right = 1110.0
+offset_bottom = 667.0
+color = Color(0, 0, 0, 1)

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ro8qaw0m28g4"
+path="res://.godot/imported/buzzing-sound-271564 (1).mp3-f2693e30991e893575099a4b2e8536fb.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/buzzing-sound-271564 (1).mp3"
+dest_files=["res://.godot/imported/buzzing-sound-271564 (1).mp3-f2693e30991e893575099a4b2e8536fb.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,105 @@
+[gd_scene load_steps=3 format=3 uid="uid://boepyuw1vohuu"]
+
+[ext_resource type="Texture2D" uid="uid://dtt2o7kf66fya" path="res://assets/menu/Screenshot 2025-07-20 182016.png" id="1_80igo"]
+[ext_resource type="FontFile" uid="uid://cxvstqboict34" path="res://assets/menu/LEMONMILK-Regular.otf" id="2_gircr"]
+
+[node name="Death Screens" type="Node2D"]
+
+[node name="Screenshot2025-07-20182016" type="Sprite2D" parent="."]
+position = Vector2(478, 259)
+scale = Vector2(1.04118, 1.04118)
+texture = ExtResource("1_80igo")
+
+[node name="Smoke" type="Label" parent="."]
+visible = false
+offset_right = 960.0
+offset_bottom = 520.0
+theme_override_font_sizes/font_size = 30
+text = "
+Service cancelled due to poor air quality...
+and poor survival skills apparently.
+
+next time, try breathing before you 
+run into the smoke like an idiot
+
+get back on track before your
+supervisor can file an incident report,
+or take your break at the perfect moment
+and pretend like nothing happened"
+horizontal_alignment = 1
+
+[node name="ThirdRail" type="Label" parent="."]
+visible = false
+offset_right = 960.0
+offset_bottom = 520.0
+theme_override_fonts/font = ExtResource("2_gircr")
+theme_override_font_sizes/font_size = 30
+text = "
+service cancelled due to
+750 volts of bad decisions
+
+when touching high voltage train chargers
+make sure brain.exe is installed
+
+get back on track before your
+supervisor can file an incident report,
+or take your break at the perfect moment
+and pretend like nothing happened"
+horizontal_alignment = 1
+
+[node name="Acceleration" type="Label" parent="."]
+visible = false
+offset_right = 960.0
+offset_bottom = 520.0
+theme_override_fonts/font = ExtResource("2_gircr")
+theme_override_font_sizes/font_size = 30
+text = "
+should've minded the gap...
+in your reaction time
+
+ you didn't catch your train in time
+so instead it caught you
+
+get back on track before your
+supervisor can file an incident report,
+or take your break at the perfect moment
+and pretend like nothing happened"
+horizontal_alignment = 1
+
+[node name="Terminator" type="Label" parent="."]
+visible = false
+offset_right = 960.0
+offset_bottom = 520.0
+theme_override_fonts/font = ExtResource("2_gircr")
+theme_override_font_sizes/font_size = 30
+text = "
+he came back, but forgot your survival,
+instead he brought you a gift, wait, your dead
+
+your life terminates here,
+thank you for dying with us
+
+get back on track before your
+supervisor can file an incident report,
+or take your break at the perfect moment
+and pretend like nothing happened"
+horizontal_alignment = 1
+
+[node name="Bullet" type="Label" parent="."]
+visible = false
+offset_right = 960.0
+offset_bottom = 520.0
+theme_override_fonts/font = ExtResource("2_gircr")
+theme_override_font_sizes/font_size = 30
+text = "
+the signal changed, and so did your pulse
+you forgot to stand behind the yellow line
+
+it was silent and deadly, there was no escape...
+unless you used your brain and got out of the way.
+
+get back on track before your
+supervisor can file an incident report,
+or take your break at the perfect moment
+and pretend like nothing happened"
+horizontal_alignment = 1

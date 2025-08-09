@@ -1,0 +1,13 @@
+[gd_resource type="Environment" format=3 uid="uid://b2swb8xhkf2hd"]
+
+[resource]
+background_energy_multiplier = 0.0
+ambient_light_energy = 0.5
+reflected_light_source = 1
+tonemap_mode = 2
+tonemap_exposure = 0.5
+tonemap_white = 6.0
+glow_intensity = 1.0
+fog_enabled = true
+volumetric_fog_density = 0.0001
+volumetric_fog_sky_affect = 0.0
